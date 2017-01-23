@@ -1,0 +1,298 @@
+/*
+Theme Name: Simple Press
+Theme URI: https://github.com/fmcgee/simple-press
+Author: Francis Mcgee
+Author URI: http://www.webinception.co.uk/
+Description: Simple  WordPress starter theme with a responsive grid based on Skeleton V2.0.4.Simple Press is Everything you need to get a quick start without any extras or fuss that could change the shape orfeel of your site . It's that simple .
+Version: 1.0
+License: MIT License
+License URI: http://opensource.org/licenses/MIT
+Tags: WordPress starter theme , Resposive grid , Simple Press 
+
+
+*/
+
+
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+
+- Base Styles
+- Typography
+- Header
+- Navigation
+- Sidebar
+- Footer
+- Links
+- Clearing
+- Entry content and images 
+
+*/
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+body {
+  font-size: 16px ;
+  line-height:20px;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222; }
+
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+/* header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.description {
+    margin: 5px 0px;
+    font-weight: bold
+}
+
+
+@media (max-width: 767px) {
+
+   #header{
+    margin-top:50px;
+   }
+
+ }
+
+
+/* Navigation
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/*  Main Nav    */
+
+.main-nav{
+  background: #000000;
+  height: 50px;
+}
+
+.main-nav ul , .main-nav li {
+  display:inline;
+}
+
+.main-nav a{
+  padding : 0px 20px;
+  text-decoration: none;
+  line-height: 50px;
+  color:white;
+  display: block;
+}
+
+.main-nav a:hover{
+  background: #ccc;
+}
+
+.main-nav ul ul a{
+  width:135px;
+  line-height:40px;
+  padding: 0 20px;
+  display: block;
+}
+
+.main-nav ul li {
+  position: relative;
+  float:left;
+}
+
+.main-nav ul ul {
+  position:absolute;
+  top: -9999999px;
+  left:0px;
+  opacity: 0;
+  background: #000000;
+  text-align: left;
+  padding-left:0px;
+}
+
+.main-nav ul li:hover > ul {
+  position: absolute;
+  top: 100%;
+  opacity: 1;
+  text-align: left;
+}
+
+#show-nav{
+
+  display:none;
+  background: #000000;
+  height:50px;
+  color:white;
+  font-size: 30px;
+}
+
+#hide-nav{
+
+  display:none;
+  background:#000000;
+  text-align: right;
+}
+
+i.fa.fa-bars.toggle-icon {
+    color: #ffffff;
+    padding-left: 5px;
+    font-size: 45px;
+}
+
+/*display arrow on parent menu  with children */
+
+.main-nav li > a:after {
+    color: #888;
+    content: ' ▾';
+}
+
+.main-nav li > a:hover:after {
+    color: #444;
+    content: ' ▾';
+}
+
+.main-nav li > a:only-child:after {
+    content: '';
+}
+
+@media only screen and (max-width :767px ) {
+
+/*  Mobile   */
+
+  .main-nav ul {
+    display:block;
+    background: #000000 ;
+    padding-left:0px;
+    position: relative;
+  }
+
+  .main-nav ul ul {
+    display:block;
+    position:relative;
+    background: #000000 ;
+  }
+
+  .main-nav ul li:hover > ul {
+     position: relative;
+     display:block;
+  }
+
+    .main-nav ul li > ul {
+     display:none;
+  }
+
+    .main-nav ul ul a {
+
+     background:white;
+     color: #000000;
+     display:block;
+     padding: 0 20px;
+     width: 80%;
+     margin-left: auto;
+     margin-right: auto;
+    
+  }
+
+   .main-nav ul ul a:hover {
+
+     background: #555;
+     color:white;
+    }
+
+   .main-nav ul li {
+    float:none; 
+   }
+
+   .main-nav {
+    display:none ;
+   }
+   
+   #show-nav{
+    display: block;
+   }
+}
+
+
+@media only screen and  (min-width :767px ) {
+
+   .main-nav {
+    display:block !important;
+   }
+}
+
+
+/* sidebar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.sidebar {
+    margin-top: 20px;
+}
+
+
+/* footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+footer.twelve.columns {
+    background: black;
+    color: white;
+    padding: 10px;
+}
+
+span#year {
+    float: right;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+a {
+  color: #1EAEDB; }
+a:hover {
+  color: #000000; }
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; }
+
+
+/* Entry content and images 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.entry-content a img, .entry-summary a img, .comment-content a img, .textwidget a img {
+    display: block;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 10px 5px 0;
+
+  }
+
+.aligncenter {
+    clear: both;
+    margin: 0 auto ;
+    display:block;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 5px 10px;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+

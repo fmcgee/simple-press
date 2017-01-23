@@ -12,11 +12,6 @@
 */
 
 
-include( get_stylesheet_directory() . '/includes/theme_setup.php' );
-
-
-
-
 /*  Add styles and scripts here ( The proper way :)  ) */
 
 

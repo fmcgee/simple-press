@@ -42,15 +42,6 @@ function wpdocs_theme_name_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts',100 );
 
-/* add custom editor style sheet */
-
-function my_theme_add_editor_styles() {
-    add_editor_style( '/css/custom-editor-style.css' );
-}
-add_action( 'init', 'my_theme_add_editor_styles' );
-
-
-
 
 
 /* register sidebar */

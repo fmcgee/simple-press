@@ -26,7 +26,7 @@
   </div><!-- end row -->
 
   <div class="row">
-    <div class="show twelve columns" id="show-nav"><a  href="#"><i class="fa fa-bars toggle-icon" aria-hidden="true"></i></a></div>
+    <div class="twelve columns" id="show-nav"><a  href="#"><i class="fa fa-bars toggle-icon" aria-hidden="true"></i></a></div>
       <nav class="twelve columns">
        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' , 'container_class' => 'main-nav' ) ); ?>
       </nav>
